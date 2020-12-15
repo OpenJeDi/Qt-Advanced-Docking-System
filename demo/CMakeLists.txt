@@ -1,9 +1,9 @@
 cmake_minimum_required(VERSION 3.5)
 project(ads_demo VERSION ${VERSION_SHORT}) 
 
-find_package(Qt5 5.5 COMPONENTS Core Gui Widgets REQUIRED)
+find_package(Qt5 COMPONENTS Core Gui Widgets REQUIRED)
 if(WIN32)
-    find_package(Qt5 5.5 COMPONENTS AxContainer REQUIRED)
+    find_package(Qt5 COMPONENTS AxContainer REQUIRED)
 endif()
 set(CMAKE_INCLUDE_CURRENT_DIR ON)
 set(ads_demo_SRCS
